@@ -1,6 +1,7 @@
 html,body{
     margin:0 ;
     text-align: center;
+    align-items: center;
 
 }
 h1{ 
@@ -82,4 +83,16 @@ p{
 
 .menu-count{
     margin-top: 50px;
+}
+
+.renderPrice{
+    display: none;
+    flex-direction: column;
+}
+
+.order-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border: 1px solid red;
 }
