@@ -39,7 +39,7 @@ p{
 .add-btn{
     width: 40px;
     height: 40px;
-    border-radius: 50%; /* 變成圓形 */
+    border-radius: 50%; 
     border: 1px solid #ccc;
     background-color: white;
     font-size: 20px;
@@ -48,6 +48,11 @@ p{
     background-color: lightgreen;
     color:white
 }
+
+header{
+    padding: 20 0 0 0 ;
+}
+
 .menu{
     padding: 20px 0 0 0;
     width: 600px;
@@ -88,11 +93,26 @@ p{
 .renderPrice{
     display: none;
     flex-direction: column;
+    padding: 20px 0 0 0;
+    width: 600px;
+    margin:15px auto ;
+    
 }
 
 .order-item{
     display: flex;
     justify-content: space-between;
     align-items: start;
-    border: 1px solid red;
+}
+
+.order-itme-left{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.remove-btn{
+    border: none;
+    background-color: white;
+    padding: 10px 0 0 0 ;
 }
