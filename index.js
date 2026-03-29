@@ -95,7 +95,7 @@ function renderOrder() {
          <div class="graylight"></div>
          <h4 class="order-item" >Total Price:<span>$${totalPrice}</span></h4>
 
-         <button >Complete Order</button>
+         <button class="complete-btn" >Complete Order</button>
     `
 }
 
