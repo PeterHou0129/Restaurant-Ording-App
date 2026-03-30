@@ -32,6 +32,28 @@ p{
      margin: 8 0 0 0;
 }
 
+form{
+    display: none;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto auto ;
+    height: 50%;
+    width: 524px;
+    height: 470px;
+    gap: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 20px
+
+}
+
+label{
+    margin:46px 0 ;
+}
 .add-btn-wrapper{
     margin: auto auto;
     
@@ -124,3 +146,26 @@ header{
     margin-top: 53px;
     padding: 18px 0 ;
 }
+
+.pay-btn{
+    background-color: #16DB99;
+    width: 100%;
+    border: none;
+    color:white;
+    margin: 22px auto 0;
+    padding: 18px 0 ;
+}
+
+input{
+    display: block;
+    width:476px;
+    height: 71px;
+    margin: 24px auto;
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 8px;
+    border-radius: 5px; 
+    font-size: 24px;
+}
+
+

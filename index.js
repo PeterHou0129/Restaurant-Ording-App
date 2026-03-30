@@ -1,5 +1,7 @@
 import { menuArray } from "./data.js"
  const  orderArr = []
+const payBtn = document.getElementById('pay-btn')
+
 document.addEventListener('click',function(e){
     if(e.target.dataset.pizza){
         plusClick(e.target.dataset.pizza)
@@ -95,9 +97,19 @@ function renderOrder() {
          <div class="graylight"></div>
          <h4 class="order-item" >Total Price:<span>$${totalPrice}</span></h4>
 
-         <button class="complete-btn" >Complete Order</button>
+         <button class="complete-btn" id="complete-btn" >Complete Order</button>
     `
+    document.getElementById('complete-btn').addEventListener('click',function(){
+        document.getElementById('formDetails').style.display = 'block'
+    })
+
+    document.getElementById('pay-btn').addEventListener('click',function(){
+        document.getElementById('formDetails').style.display = 'none'
+    })
+
 }
+
+
 
 function render(){
     document.getElementById('menu').innerHTML = getMenuHtml() 
