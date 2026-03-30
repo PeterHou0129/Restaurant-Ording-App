@@ -1,6 +1,13 @@
 import { menuArray } from "./data.js"
  const  orderArr = []
-const payBtn = document.getElementById('pay-btn')
+const payBtn = document.getElementById('formDetails')
+payBtn.addEventListener('submit',function(e){
+    e.preventDefault()
+    const payFormData = new FormData(payBtn)
+    console.log(typeof payFormData)
+    document.getElementById('formDetails').style.display = 'none'
+    document.getElementById('renderPrice').style.display = 'none'
+})
 
 document.addEventListener('click',function(e){
     if(e.target.dataset.pizza){
@@ -101,10 +108,6 @@ function renderOrder() {
     `
     document.getElementById('complete-btn').addEventListener('click',function(){
         document.getElementById('formDetails').style.display = 'block'
-    })
-
-    document.getElementById('pay-btn').addEventListener('click',function(){
-        document.getElementById('formDetails').style.display = 'none'
     })
 
 }
