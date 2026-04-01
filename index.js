@@ -1,12 +1,14 @@
 import { menuArray } from "./data.js"
  const  orderArr = []
-const payBtn = document.getElementById('formDetails')
-payBtn.addEventListener('submit',function(e){
+const consentForm = document.getElementById('formDetails')
+
+consentForm.addEventListener('submit',function(e){
     e.preventDefault()
-    const payFormData = new FormData(payBtn)
-    console.log(typeof payFormData)
+    const consentFormData = new FormData(consentForm)
     document.getElementById('formDetails').style.display = 'none'
     document.getElementById('renderPrice').style.display = 'none'
+    const fullname = consentFormData.get('customerName')
+    document.getElementById('footer').innerHTML = `<h1>Thank you for your order, ${fullname}!</h1>`
 })
 
 document.addEventListener('click',function(e){
